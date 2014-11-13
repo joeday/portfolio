@@ -19,18 +19,41 @@ nav.navbar.navbar-default.navbar-fixed-top role="navigation"
 
 .container-fluid
   .row.portfolio-container-light
-    .col-md-4.col-md-offset-2
+    .col-md-8.col-md-offset-2
       h2.portfolio-headline The City > UX2.0
-      p CHALLENGE: Drive church engagement through private group networking with a focus on usability. 
-      p SOLUTION: Redesign our initial offering, improve our core features, 
-      p RESULTS: 
-      ul.unstyled
-        li News Feed - content as interface. Previously, activity summaries were interface
-        li Content creation - distinct Topics, Events, Prayers, & Needs
-        li Add fun - status updates, with integration into Twitter & Facebook
-    .col-md-4
-      p Image goes here
+      p 
+        | The vision was to drive church engagement through 
+        strong private group networking 
+        | with a focus on usability. We redesigned the initial offering, improving accessibility and usability of the core feature set. The results were a cleaner layout, committment to content as interface, and a customizable interface based on church branding. 
+    .col-md-8.col-md-offset-2
+      = image_tag("city_main.jpg", class: "img-responsive")
+      .row.no-gutters
+        .col-md-6
+          =image_tag("city_login.jpg", class: "img-responsive")
+        .col-md-6
+          =image_tag("city_status.jpg", class: "img-responsive")
 
+.container-fluid
+  .row.portfolio-container-light
+    .col-md-4.col-md-offset-2
+      h2.portfolio-headline The City > Mobile
+      p 
+        | The challenge was that the platform had grown so quickly and our customers needed mobile ASAP. The solution was to provide a clean, highly performant mobile web app while working towards native apps.
+      h3 Why show the login screen?
+      p.small Becuase details. Notice my username is not autocorrected or autocapitalized? I don't know about you, but when a login screen autocorrects my username, I go a bit crazy and am tempted to throw my phone at the developer! Especially, because I know how easy it is to avoid. Here's a freebie to keep your users happy: 
+      code &lt;input auotcapitalize="off" autocorrect="off"&gt;
+    .col-md-4
+      .row
+        .col-md-6
+          =image_tag("city_mobile_login.jpg", class: "img-responsive")
+        .col-md-6
+          =image_tag("city_mobile_main.jpg", class: "img-responsive")
+      .row.space-above
+        .col-md-6
+          =image_tag("city_mobile_event.jpg", class: "img-responsive")
+        .col-md-6
+          =image_tag("city_mobile_group.jpg", class: "img-responsive")
+          
 .container-fluid
   .row.footer
     .col-md-2.col-md-offset-2
