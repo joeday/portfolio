@@ -1,9 +1,18 @@
+
 // typography
 
-$sans_font_family: "brandon-grotesque", "Helvetica Neue", Helvetica, Arial, sans-serif !default;
-$serif: Georgia, "Times New Roman", Times, serif !default;
+$sans:                "brandon-grotesque", "Helvetica Neue", Helvetica, Arial, sans-serif !default;
+$serif:               "minion-pro", Georgia, "Times New Roman", Times, serif !default;
+$mono:                "prestige-elite-std";
 
 
 // colors
-$jd_orange: rgb(194,81,15);
-$white: #fff;
+$orange:              rgb(194,81,15);
+$black:               #222;
+$dk_grey:             #555;
+$grey:                #aaa;
+$lt_grey:             #ccc;
+$off_white:           #ddd;
+$white:               #f0f0f0;
+
+
