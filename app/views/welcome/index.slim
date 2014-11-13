@@ -6,9 +6,9 @@ nav.navbar.navbar-default.navbar-fixed-top role="navigation"
     .collapse.navbar-collapse
       ul.nav.navbar-nav.navbar-right
         li = link_to "Back to the top", "#", class: "secondary top-link", id: "returnToTop"
-    
-.container-fluid.content-headline#top
-  .row
+
+.container-fluid
+  .row.content-headline
     .col-sm-6.col-sm-offset-3
       h1.headline Hi. I'm Joe Day.
       p.white I’m a Seattle-based UX Designer focused on solving large-scale problems for large user bases. I’ve worked on Microsoft Zune, Windows Mobile, The City and Mars Hill, to name a few.
@@ -17,8 +17,8 @@ nav.navbar.navbar-default.navbar-fixed-top role="navigation"
         | Say hi: 
         = link_to "heyjoeday@gmail.com", "mailto:heyjoeday@gmail.com"
 
-.container-fluid.portfolio-container-light
-  .row
+.container-fluid
+  .row.portfolio-container-light
     .col-sm-4.col-sm-offset-2
       h2.portfolio-headline The City > UX2.0
       p CHALLENGE: Drive church engagement through private group networking with a focus on usability. 
@@ -28,12 +28,11 @@ nav.navbar.navbar-default.navbar-fixed-top role="navigation"
         li News Feed - content as interface. Previously, activity summaries were interface
         li Content creation - distinct Topics, Events, Prayers, & Needs
         li Add fun - status updates, with integration into Twitter & Facebook
-    .col-sm-4.img-placeholder
+    .col-sm-4
       p Image goes here
-      
 
-.container-fluid.footer
-  .row
+.container-fluid
+  .row.footer
     .col-sm-2.col-sm-offset-2
       ul.list-unstyled
         li Joe Day
