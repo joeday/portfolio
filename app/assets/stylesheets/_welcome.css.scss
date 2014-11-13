@@ -16,7 +16,7 @@ $dk_grey:             #555;
 $grey:                #aaa;
 $lt_grey:             #ccc;
 $off_white:           #ddd;
-$white:               #fff;
+$white:               #f0f0f0;
 
 
 
@@ -37,11 +37,31 @@ a {
   color: $orange;
 }
 
-.glyphicon {
-  margin: 0 .5em;
-  color: rgba(255,255,255,.3);
+.navbar-right {
+  margin-right: 0;
 }
 
+.navbar-nav li a {
+  font-family: $sans;
+  font-weight: 100;
+  font-size: 1em;
+  color: $white;
+  padding: .6em 0 0;
+}
+
+.navbar-nav li a:hover.secondary {
+  color: $white;
+}
+
+.navbar-nav li a.secondary {
+  font-size: .6em;
+  text-transform: uppercase;
+  color: $white;
+}
+
+.navbar-nav li a.top-link {
+  margin-right: .6em;
+}
 .headline {
   font-family: $sans;
   font-weight: 100;
@@ -79,6 +99,10 @@ a {
   font-size: 1em;
   color: #fff;
   padding-left: .6em;
+}
+
+#returnToTop {
+  display: none;
 }
 
 nav a:hover {
@@ -119,9 +143,10 @@ nav a:hover {
   background: $black;
   color: $white;
   padding: 2em 0;
+  font-size: .8em;
   p {
     font-family: $mono;
-    font-size: .6em;
+    font-size: .8em;
     color: $grey;
   }
 }
