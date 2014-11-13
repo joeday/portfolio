@@ -17,8 +17,45 @@ nav.navbar.navbar-default.navbar-fixed-top role="navigation"
         | Say hi: 
         = link_to "heyjoeday@gmail.com", "mailto:heyjoeday@gmail.com"
 
+.container-fluid.large-space-above
+  .row.portfolio-container-light
+    .col-md-8.col-md-offset-2
+      h2.portfolio-headline Mars Hill > Local Church Pages 
+      p
+      | Ensuring people can find a local church is hard enough. We wanted to show the life of that local church while providing quick access to the information they needed. We wanted to do this with photos. Since every local church had a Flickr account, we hooked into the API to grab photos from a curated album.
+    .col-md-8.col-md-offset-2
+      = image_tag("mh_church_pages.jpg", class: "img-responsive space-above")
+
 .container-fluid
   .row.portfolio-container-light
+    .col-md-8.col-md-offset-2
+      h2.portfolio-headline Mars Hill > Live Streaming Services
+      p The vision was to enable anybody in the world to watch Sunday services online. The solution was a fully immerseive experience with a rich feature set: user-localized time zone, interactive user map, promo carousel, multiple media view options, note taking, video pre-roll, recent sermons, countdown timer, and more. 
+    .col-md-8.col-md-offset-2
+      = image_tag("mh_streaming.jpg", class: "img-responsive space-above")
+
+.container-fluid
+  .row.portfolio-container-light
+    .col-md-4.col-md-offset-2
+      = image_tag("mh_signin_sketch.jpg", class: "img-responsive")
+      = image_tag("mh_signin.jpg", class: "img-responsive")
+    .col-md-4
+      h2.portfolio-headline Mars Hill > Sign in / Sign up 
+      p
+      | The process of signing in or signing up needed to be easer because we were losing people. This was part of moving to a pure oAuth2 authentication scheme. I sketched and built many ideas, here is the one we went with. 
+
+.container-fluid
+  .row.portfolio-container-light
+    .col-md-4.col-md-offset-2
+      h2.portfolio-headline Mars Hill > HTML5 Media Player 
+      p
+      | Upgrade from Flash to HTML5 because the primary value of marshill.com is the video sermons. Flash and mobile are always at odds with one another, and we knew HTML5 was mature enough to do all the things we needed to do. Things like closed captioning, low-bandwidth, audio-only, fully customized controls and responsive. We completely rearchitected how we do video for this project. 
+    .col-md-4
+      = image_tag("mh_html5.jpg", class: "img-responsive")
+      = image_tag("mh_html5_beta.jpg", class: "img-responsive space-above")
+
+.container-fluid.large-space-above
+  .row.portfolio-container-offwhite
     .col-md-8.col-md-offset-2
       h2.portfolio-headline The City > UX2.0
       p 
@@ -34,13 +71,13 @@ nav.navbar.navbar-default.navbar-fixed-top role="navigation"
           =image_tag("city_status.jpg", class: "img-responsive")
 
 .container-fluid
-  .row.portfolio-container-light
+  .row.portfolio-container-offwhite
     .col-md-4.col-md-offset-2
       h2.portfolio-headline The City > Mobile
       p 
         | The challenge was that the platform had grown so quickly and our customers needed mobile ASAP. The solution was to provide a clean, highly performant mobile web app while working towards native apps.
       h3 Why show the login screen?
-      p.small Becuase details. Notice my username is not autocorrected or autocapitalized? I don't know about you, but when a login screen autocorrects my username, I go a bit crazy and am tempted to throw my phone at the developer! Especially, because I know how easy it is to avoid. Here's a freebie to keep your users happy: 
+      p.small Because details. Notice my username is not autocorrected or autocapitalized? I don't know about you, but when a login screen autocorrects my username, I go a bit crazy and am tempted to throw my phone at the developer! Especially, because I know how easy it is to avoid. Here's a freebie to keep your users happy: 
       code &lt;input auotcapitalize="off" autocorrect="off"&gt;
     .col-md-4
       .row

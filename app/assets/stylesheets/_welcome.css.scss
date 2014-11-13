@@ -21,7 +21,7 @@ body {
   font-family: $serif;
   font-size: 20px;
   color: $black;
-  background: $lt_grey;
+  background: $white;
 }
 
 p {
@@ -43,6 +43,10 @@ code {
 
 .space-above {
   margin-top: 2em;
+}
+
+.large-space-above {
+  margin-top: 4em;
 }
 .row.no-gutters {
   margin-right: 0;
@@ -139,6 +143,7 @@ nav a:hover {
   background-image: url('jd_seattle.jpg');
   background-position: center center;
   background-size: cover;
+  background-attachment: fixed;
 }
 
 .portfolio-container-light {
@@ -146,8 +151,8 @@ nav a:hover {
   padding: 2em 0;
 }
 
-.portfolio-container-dark {
-  background: $black;
+.portfolio-container-offwhite {
+  background: $off_white;
   padding: 2em 0;
 }
 
