@@ -1,9 +1,10 @@
 nav.navbar.navbar-default.navbar-fixed-top role="navigation"
   .container-fluid
     .navbar-header
-      =link_to "UX Designer > Joe Day", "#", class: "joe-logo"
+      =link_to "#", class:"joe-logo" do
+        | UX Designer &nbsp; > &nbsp; Joe Day
     
-.container-fluid.content-one
+.container-fluid.content-headline
   .row
     .col-sm-6.col-sm-offset-3
       h1.headline Hi. I'm Joe Day.
@@ -13,7 +14,7 @@ nav.navbar.navbar-default.navbar-fixed-top role="navigation"
         | Say hi: 
         = link_to "heyjoeday@gmail.com", "mailto:heyjoeday@gmail.com"
 
-.container-fluid.content-two
+.container-fluid.portfolio-container-light
   .row
     .col-sm-4.col-sm-offset-2
       h2.portfolio-headline The City > UX2.0
@@ -26,4 +27,18 @@ nav.navbar.navbar-default.navbar-fixed-top role="navigation"
         li Add fun - status updates, with integration into Twitter & Facebook
     .col-sm-4.img-placeholder
       p Image goes here
+      
 
+.container-fluid.footer
+  .row
+    .col-sm-2.col-sm-offset-2
+      ul.list-unstyled
+        li Joe Day
+        li = link_to "206-601-4411", "tel:+12066014411"
+        li = link_to "LinkedIn", "http://www.linkedin.com/in/heyjoeday"
+    .col-sm-6
+      p 
+        strong.off_white In case you were wondering 
+        | this site hand built from scratch using Ruby on Rails, Postgres, Heroku, GitHub, SLIM, SASS, Bootstrap and 
+        em actual  
+        | caffeine.

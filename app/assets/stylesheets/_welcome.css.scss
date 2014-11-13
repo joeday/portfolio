@@ -6,16 +6,17 @@
 
 $sans:                "brandon-grotesque", "Helvetica Neue", Helvetica, Arial, sans-serif !default;
 $serif:               "minion-pro", Georgia, "Times New Roman", Times, serif !default;
-$mono:                "prestige-elite-std";;
+$mono:                "prestige-elite-std";
 
 
 // colors
 $orange:              rgb(194,81,15);
-$white:               #fff;
 $black:               #222;
 $dk_grey:             #555;
 $grey:                #aaa;
 $lt_grey:             #ccc;
+$off_white:           #ddd;
+$white:               #fff;
 
 
 
@@ -34,6 +35,11 @@ p {
 
 a {
   color: $orange;
+}
+
+.glyphicon {
+  margin: 0 .5em;
+  color: rgba(255,255,255,.3);
 }
 
 .headline {
@@ -60,7 +66,11 @@ a {
 }
 
 .lt_grey {
-  
+  color: $lt_grey;
+}
+
+.off_white {
+  color: $off_white;
 }
 
 .joe-logo {
@@ -83,20 +93,37 @@ nav a:hover {
   padding: .6em 0;
 }
 
-.content-one {
+.content-headline {
   height: 90vh;
   background-image: url('jd_seattle.jpg');
   background-position: center center;
   background-size: cover;
 }
 
-.content-two {
-  
+.portfolio-container-light {
+  background: $white;
+  padding: 2em 0;
+}
+
+.portfolio-container-dark {
+  background: $black;
+  padding: 2em 0;
 }
 
 .img-placeholder {
   height: 400px;
   background: $dk_grey;
+}
+
+.footer {
+  background: $black;
+  color: $white;
+  padding: 2em 0;
+  p {
+    font-family: $mono;
+    font-size: .6em;
+    color: $grey;
+  }
 }
 
 
