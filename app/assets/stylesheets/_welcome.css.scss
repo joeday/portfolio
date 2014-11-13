@@ -1,0 +1,102 @@
+// Place all the styles related to the welcome controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+
+// typography
+
+$sans:                "brandon-grotesque", "Helvetica Neue", Helvetica, Arial, sans-serif !default;
+$serif:               "minion-pro", Georgia, "Times New Roman", Times, serif !default;
+$mono:                "prestige-elite-std";;
+
+
+// colors
+$orange:              rgb(194,81,15);
+$white:               #fff;
+$black:               #222;
+$dk_grey:             #555;
+$grey:                #aaa;
+$lt_grey:             #ccc;
+
+
+
+body {
+  font-family: $serif;
+  font-size: 20px;
+  color: $black;
+}
+
+p {
+  font-size: 1em;
+  line-height: 1.5em;
+  margin: 0 0 1em 0;
+  font-family: $serif;
+}
+
+a {
+  color: $orange;
+}
+
+.headline {
+  font-family: $sans;
+  font-weight: 100;
+  font-size: 3em;
+  color: #fff;
+  margin-top: 20vh;
+}
+
+.portfolio-headline {
+  font-family: $sans;
+  font-weight: 100;
+  font-size: 2em;
+  color: #000;
+}
+
+.white {
+  color: $white;
+}
+
+.black {
+  color: $black;
+}
+
+.lt_grey {
+  
+}
+
+.joe-logo {
+  font-family: $sans;
+  font-weight: 100;
+  font-size: 1em;
+  color: #fff;
+  padding-left: .6em;
+}
+
+nav a:hover {
+  text-decoration: none;
+  color: #fff;
+}
+
+.navbar-default {
+  background-color: rgba(194,81,15,0.8);
+  border: 0;
+  border-radius: 0;
+  padding: .6em 0;
+}
+
+.content-one {
+  height: 90vh;
+  background-image: url('jd_seattle.jpg');
+  background-position: center center;
+  background-size: cover;
+}
+
+.content-two {
+  
+}
+
+.img-placeholder {
+  height: 400px;
+  background: $dk_grey;
+}
+
+
