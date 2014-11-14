@@ -9,7 +9,7 @@ nav.navbar.navbar-default.navbar-fixed-top role="navigation"
 
 .container-fluid
   .row.content-headline
-    .col-md-6.col-md-offset-3
+    .col-md-8.col-md-offset-2
       h1.headline Hi. I'm Joe Day.
       p.white I’m a Seattle-based UX Designer focused on solving large-scale problems for large user bases. I’ve worked on Microsoft Zune, Windows Mobile, The City and Mars Hill, to name a few.
       p.white When not designing, you might find me hiking with my family and snapping lots of photos, or learning a new method to cook a steak, or writing a song for my next album. I don’t stay still for too long. 
@@ -54,7 +54,46 @@ nav.navbar.navbar-default.navbar-fixed-top role="navigation"
       = image_tag("mh_html5.jpg", class: "img-responsive")
       = image_tag("mh_html5_beta.jpg", class: "img-responsive space-above")
 
-.container-fluid.large-space-above
+.container-fluid.space-above
+  .row.skills-container
+    .col-md-8.col-md-offset-2
+      h2.portfolio-headline.white Skills
+      .row
+        ul.list-unstyled.col-xs-2.skill-list
+          li Ruby on Rails
+          li HTML5
+          li CSS3
+          li SASS
+          li HAML
+        ul.list-unstyled.col-xs-2.skill-list
+          li SLIM
+          li Bootstrap
+          li JavaScript
+          li CoffeeScript
+          li jQuery
+        ul.list-unstyled.col-xs-2.skill-list
+          li Prototype
+          li XML
+          li JSON
+          li MySQL
+          li Redis
+        ul.list-unstyled.col-xs-2.skill-list
+          li Postgres
+          li Git
+          li SVN
+          li Mac 
+          li Windows
+        ul.list-unstyled.col-xs-2.skill-list
+          li iWork
+          li Adobe Creative Cloud
+          li Pivotal Tracker
+          li New Relic
+        ul.list-unstyled.col-xs-2.skill-list
+          li AirBrake
+          li PagerDuty
+          li Asana         
+
+.container-fluid
   .row.portfolio-container-offwhite
     .col-md-8.col-md-offset-2
       h2.portfolio-headline The City > UX2.0
@@ -90,7 +129,7 @@ nav.navbar.navbar-default.navbar-fixed-top role="navigation"
           =image_tag("city_mobile_event.jpg", class: "img-responsive")
         .col-xs-6
           =image_tag("city_mobile_group.jpg", class: "img-responsive")
-          
+           
 .container-fluid
   .row.footer
     .col-md-2.col-md-offset-2
@@ -101,6 +140,6 @@ nav.navbar.navbar-default.navbar-fixed-top role="navigation"
     .col-md-6
       p 
         strong.off_white This site  
-        | is hand built from scratch using Ruby on Rails, Postgres, Heroku, GitHub, SLIM, SASS, Bootstrap and 
+        | is hand built from scratch using Ruby on Rails, Postgres, Heroku, GitHub, SLIM, SASS, Bootstrap, my own photography and 
         em actual  
         | caffeine.
