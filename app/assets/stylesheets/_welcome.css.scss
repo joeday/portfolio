@@ -37,8 +37,11 @@ a {
 
 code {
   font-family: $mono;
-  color: $dk_grey;
-  background: none;
+  color: $black;
+  background: $lt_grey;
+  font-size: .7em;
+  border-radius: 0;
+  border: none;
 }
 
 .space-above {
