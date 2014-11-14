@@ -211,15 +211,18 @@ nav a:hover {
   
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 992px) {
   .content-headline {
-//    height: auto;
-    padding-bottom: 2em;
     background-attachment: scroll;
   }
-  
   .skills-container {
     background-attachment: scroll;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .content-headline {
+    padding-bottom: 2em;
   }
 }
 
