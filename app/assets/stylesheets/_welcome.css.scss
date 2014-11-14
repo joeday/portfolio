@@ -153,6 +153,13 @@ nav a:hover {
   background-size: cover;
   background-attachment: fixed;
   padding: 5em 0 3em;
+  p {
+    font-family: $sans;
+    font-weight: 100;
+  }
+  a {
+    font-weight: 300;
+  }
 }
 
 .skill-list {
