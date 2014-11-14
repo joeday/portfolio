@@ -1,0 +1,36 @@
+.container-fluid
+  .row.portfolio-container-light
+    .col-md-8.col-md-offset-2
+      h2.portfolio-headline Mars Hill > Local Church Pages 
+      p
+      | Ensuring people can find a local church is hard enough. We wanted to show the life of that local church while providing quick access to the information they needed. We wanted to do this with photos. Since every local church had a Flickr account, we hooked into the API to grab photos from a curated album.
+    .col-md-8.col-md-offset-2
+      = image_tag("mh_church_pages.jpg", class: "img-responsive space-above")
+
+.container-fluid
+  .row.portfolio-container-light
+    .col-md-8.col-md-offset-2
+      h2.portfolio-headline Mars Hill > Live Streaming Services
+      p The vision was to enable anybody in the world to watch Sunday services online. The solution was a fully immerseive experience with a rich feature set: user-localized time zone, interactive user map, promo carousel, multiple media view options, note taking, video pre-roll, recent sermons, countdown timer, and more. 
+    .col-md-8.col-md-offset-2
+      = image_tag("mh_streaming.jpg", class: "img-responsive space-above")
+
+.container-fluid
+  .row.portfolio-container-light
+    .col-md-4.col-md-offset-2.col-md-push-4.space-below
+      h2.portfolio-headline Mars Hill > Sign in / Sign up 
+      p
+      | The process of signing in or signing up needed to be easer because we were losing people. This was part of moving to a pure oAuth2 authentication scheme. I sketched and built many ideas, here is the one we went with. 
+    .col-md-4.col-md-pull-4
+      = image_tag("mh_signin_sketch.jpg", class: "img-responsive")
+      = image_tag("mh_signin.jpg", class: "img-responsive")
+
+.container-fluid
+  .row.portfolio-container-light
+    .col-md-4.col-md-offset-2.space-below
+      h2.portfolio-headline Mars Hill > HTML5 Media Player 
+      p
+      | Upgrade from Flash to HTML5 because the primary value of marshill.com is the video sermons. Flash and mobile are always at odds with one another, and we knew HTML5 was mature enough to do all the things we needed to do. Things like closed captioning, low-bandwidth, audio-only, fully customized controls and responsive. We completely rearchitected how we do video for this project. 
+    .col-md-4
+      = image_tag("mh_html5.jpg", class: "img-responsive")
+      = image_tag("mh_html5_beta.jpg", class: "img-responsive space-above")
