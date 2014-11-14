@@ -92,12 +92,12 @@ code {
 .navbar-nav li a.top-link {
   margin-right: .6em;
 }
+
 .headline {
   font-family: $sans;
   font-weight: 100;
   font-size: 3em;
   color: #fff;
-  margin-top: 16vh;
 }
 
 .portfolio-headline {
@@ -148,11 +148,11 @@ nav a:hover {
 }
 
 .content-headline {
-  height: 70vh;
   background-image: url('jd_seattle.jpg');
   background-position: center center;
   background-size: cover;
   background-attachment: fixed;
+  padding: 5em 0 3em;
 }
 
 .skill-list {
@@ -196,10 +196,17 @@ nav a:hover {
   }
 }
 
+@media screen and (min-width: 1200px) {
+  
+  .content-headline p {
+    font-size: 1.3em;
+  }
+  
+}
 
 @media screen and (max-width: 768px) {
   .content-headline {
-    height: auto;
+//    height: auto;
     padding-bottom: 2em;
   }
 }
