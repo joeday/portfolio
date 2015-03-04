@@ -10,7 +10,10 @@ html
       | try{Typekit.load();}catch(e){}
     meta name="viewport" content="width=device-width, initial-scale=1" /
   body
-    = yield
+    header.site-header
+      = render "nav"
+    .container-fluid
+      = yield
     script src="//cdnjs.cloudflare.com/ajax/libs/jquery/2.1.1/jquery.min.js" type="text/javascript" 
     script src="//cdnjs.cloudflare.com/ajax/libs/jquery.lazyload/1.9.1/jquery.lazyload.min.js" type="text/javascript" 
     

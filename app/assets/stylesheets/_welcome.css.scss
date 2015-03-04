@@ -21,7 +21,8 @@ body {
   font-family: $serif;
   font-size: 20px;
   color: $black;
-  background: $white;
+  background: red;
+	padding-left: 15em;
 }
 
 p {
@@ -64,36 +65,36 @@ code {
   margin-right: 0;
   margin-left: 0;
 }
+
+.container-fluid,
 .row.no-gutters [class^="col-"],
 .row.no-gutters [class*=" col-"]{
   padding-right: 0;
   padding-left: 0;
 }
 
-.navbar-right {
-  margin-right: 0;
+.site-header {
+	background: $black;
+	color: $white;
+	left: 0;
+	z-index: 1000;
+	padding-top: 0;
+	position: fixed;
+	overflow: hidden;
+	width: 15em;
+	height: 100vh;
+	padding: 2em;
 }
 
-.navbar-nav li a {
-  font-family: $sans;
-  font-weight: 100;
-  font-size: 1em;
-  color: $white;
-  padding: .6em 0 0;
+nav > ul {
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
 }
 
-.navbar-nav li a:hover.secondary {
-  color: $white;
-}
-
-.navbar-nav li a.secondary {
-  font-size: .6em;
-  text-transform: uppercase;
-  color: $white;
-}
-
-.navbar-nav li a.top-link {
-  margin-right: .6em;
+nav > ul li a:hover {
+  text-decoration: none;
+  color: #fff;
 }
 
 .headline {
@@ -131,31 +132,18 @@ code {
   font-weight: 100;
   font-size: 1em;
   color: #fff;
-  padding-left: .6em;
 }
 
 #returnToTop {
   display: none;
 }
 
-nav a:hover {
-  text-decoration: none;
-  color: #fff;
-}
-
-.navbar-default {
-  background-color: rgba(194,81,15,0.95);
-  border: 0;
-  border-radius: 0;
-  padding: .6em 0;
-}
-
 .content-headline {
-  background-image: url('jd_seattle.jpg');
+  background-image: url('jd_portrait_1.jpg');
   background-position: center center;
   background-size: cover;
   background-attachment: fixed;
-  padding: 5em 0 3em;
+  padding: 4em 0 3em;
   p {
     font-family: $sans;
     font-weight: 100;
@@ -199,11 +187,12 @@ nav a:hover {
   color: $white;
   padding: 2em 0;
   font-size: .8em;
-  p {
-    font-family: $mono;
-    font-size: .8em;
-    color: $grey;
-  }
+}
+
+.footer-blurb {
+  font-family: $mono;
+  font-size: .8em;
+  color: $grey;
 }
 
 @media screen and (min-width: 1200px) {
