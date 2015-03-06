@@ -163,10 +163,16 @@ nav .glyphicon {
   display: none;
 }
 
-.top-link {
+a.top-link {
 	position: fixed;
 	bottom: 1em;
 	right: 1em;
+}
+
+.down-arrow {
+	width: 1.3em;
+	height: 1.3em;
+	margin-left: .5em;
 }
 
 .content-headline {
