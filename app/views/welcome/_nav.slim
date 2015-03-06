@@ -1,8 +1,21 @@
 nav role="navigation"
   ul
+    li.nav-toggle
+      = link_to "#", id: "#navDrawerToggle" do
+        span.glyphicon.glyphicon-option-vertical aria-hidden="true"
     li.joe-logo UX Designer &nbsp; > &nbsp; Joe Day
-    li = link_to "Home", "#"
-    li = link_to "Web Design", "#"
-    li = link_to "Music", "#"
-    li = link_to "Photography", "#"
-    li = link_to "Back to the top", "#", class: "secondary top-link", id: "returnToTop"
+    li
+      = link_to "#", class: ".main-link" do
+        span.glyphicon.glyphicon-home aria-hidden="true"
+        | Home
+      / = link_to "Home", "#", class: ".main-link"
+    li
+      span.glyphicon.glyphicon-th aria-hidden="true"
+      = link_to "Web Design", "#", class: ".main-link"
+    li
+      span.glyphicon.glyphicon-cd aria-hidden="true"
+      = link_to "Music", "#", class: ".main-link"
+    li
+      span.glyphicon.glyphicon-camera aria-hidden="true"
+      = link_to "Photography", "#", class: ".main-link"
+    li.main-link = link_to "Back to the top", "#", class: "secondary top-link", id: "returnToTop"

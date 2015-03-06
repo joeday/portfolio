@@ -21,7 +21,6 @@ body {
   font-family: $serif;
   font-size: 20px;
   color: $black;
-  background: red;
 	padding-left: 15em;
 }
 
@@ -83,7 +82,7 @@ code {
 	overflow: hidden;
 	width: 15em;
 	height: 100vh;
-	padding: 2em;
+	padding: 2em 1.6em;
 }
 
 nav > ul {
@@ -92,9 +91,32 @@ nav > ul {
 	padding: 0;
 }
 
+nav > ul li .main-link {
+	font-size: .9em;
+}
+
+nav > ul li:hover,
 nav > ul li a:hover {
-  text-decoration: none;
-  color: #fff;
+	text-decoration: none;
+	color: #fff;
+	.glyphicon {
+		color: $grey;
+	}
+}
+
+nav .nav-toggle {
+	position: absolute;
+	top: 2em;
+	right: 0em;
+}
+
+nav .glyphicon {
+	font-size: .7em;
+	padding-right: 1em;
+	color: $dk_grey;
+	&:hover {
+		color: $grey;
+	}
 }
 
 .headline {
@@ -198,7 +220,7 @@ nav > ul li a:hover {
 @media screen and (min-width: 1200px) {
   
   .content-headline p {
-    font-size: 1.3em;
+    font-size: 1em;
   }
   
 }
