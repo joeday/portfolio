@@ -35,6 +35,10 @@ a {
   color: $orange;
 }
 
+a:hover {
+	text-decoration: none;
+}
+
 code {
   font-family: $mono;
   color: $black;
@@ -142,6 +146,15 @@ nav .glyphicon {
 	color: $dk_grey;
 	&:hover {
 		color: $grey;
+	}
+}
+
+.contact-info {
+	position: absolute;
+	bottom: 2em;
+	left: 2em;
+	.social-link {
+		font-size: .7em;
 	}
 }
 
@@ -270,12 +283,6 @@ a.top-link {
   color: $white;
   padding: 2em 0;
   font-size: .8em;
-}
-
-.footer-blurb {
-  font-family: $mono;
-  font-size: .8em;
-  color: $grey;
 }
 
 @media screen and (min-width: 1200px) {
