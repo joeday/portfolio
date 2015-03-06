@@ -1,19 +1,26 @@
 nav role="navigation"
-  ul
+  ul data-no-turbolink=""
     li.nav-toggle
       = link_to "#", id: "#navDrawerToggle" do
         span.glyphicon.glyphicon-option-vertical aria-hidden="true"
     li.joe-logo UX Designer &nbsp; > &nbsp; Joe Day
     li
-      = link_to "home", class: ".main-link" do
+      = link_to home_path, class: ".main-link" do
         span.glyphicon.glyphicon-home aria-hidden="true"
         | Home
     li
       span.glyphicon.glyphicon-th aria-hidden="true"
-      = link_to "Web Design", "web", class: ".main-link"
+      = link_to "Web Design", web_path, class: ".main-link"
     li
       span.glyphicon.glyphicon-cd aria-hidden="true"
       = link_to "Music", "music", class: ".main-link"
     li
       span.glyphicon.glyphicon-camera aria-hidden="true"
       = link_to "Photography", "photography", class: ".main-link"
+
+.contact-info
+  ul.list-unstyled
+    li Joe Day
+    li = link_to "206-601-4411", "tel:+12066014411"
+    li = link_to "Resume", resume_path
+    li = link_to "LinkedIn", "http://www.linkedin.com/in/heyjoeday"

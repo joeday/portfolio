@@ -16,4 +16,8 @@ class WelcomeController < ApplicationController
     
   end
   
+  def resume
+    
+  end
+  
 end

@@ -8,7 +8,7 @@ $ ->
   return
 
 $(document).ready ->
-  
+  console.log("document is ready bro")
   #Check to see if the window is top if not then display button
   $(window).scroll ->
     if $(this).scrollTop() > 100

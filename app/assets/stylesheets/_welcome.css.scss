@@ -44,6 +44,29 @@ code {
   border: none;
 }
 
+h1 {
+	
+}
+
+h2 {
+	font-family: $serif;
+	text-transform: uppercase;
+	letter-spacing: 2px;
+	color: $orange;
+	font-size: 1em;
+}
+
+h3 {
+	font-family: $serif;
+	color: $black;
+	font-weight: bold;
+	
+}
+
+h4 {
+	
+}
+
 .space-above {
   margin-top: 2em;
 }
@@ -167,6 +190,29 @@ a.top-link {
 	position: fixed;
 	bottom: 1em;
 	right: 1em;
+}
+
+.resume{
+	h3 {
+		margin-bottom: .3em;
+	}
+	h4 {
+		margin: .3em 0;
+	}
+	.job {
+		margin-bottom: 2em;
+	}
+	.accomplishments {
+		font-style: italic;
+		margin-top: 1.6em;
+	}
+	ul {
+		padding-left: 1em;
+		width: 80%;
+	}
+	ul > li {
+		font-size: .8em;
+	}
 }
 
 .down-arrow {

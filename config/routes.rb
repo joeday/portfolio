@@ -10,7 +10,8 @@ Rails.application.routes.draw do
   get 'music' =>          'welcome#music'
   get 'web' =>            'welcome#web'
   get 'photography' =>    'welcome#photography'
-  get 'home' =>            'welcome#index'
+  get 'home' =>           'welcome#index'
+  get 'resume' =>         'welcome#resume'
 
   # Example of regular route:
   #   get 'products/:id' => 'catalog#view'
