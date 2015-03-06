@@ -1,13 +1,17 @@
-.container-fluid
-  .row.footer
-    .col-md-2.col-md-offset-2
-      ul.list-unstyled
-        li Joe Day
-        li = link_to "206-601-4411", "tel:+12066014411"
-        li = link_to "LinkedIn", "http://www.linkedin.com/in/heyjoeday"
-    .col-md-6
-      p.footer-blurb
-        strong.off_white This site  
-        | is hand built from scratch using Ruby on Rails, Postgres, Heroku, GitHub, SLIM, SASS, Bootstrap, my own photography and 
-        em actual  
-        | caffeine.
+.row.relative
+  = link_to "#", class: "secondary top-link", id: "returnToTop" do
+    | Back to the top
+    span
+      = image_tag "/images/down.svg"
+.row.footer
+  .col-md-2.col-md-offset-2
+    ul.list-unstyled
+      li Joe Day
+      li = link_to "206-601-4411", "tel:+12066014411"
+      li = link_to "LinkedIn", "http://www.linkedin.com/in/heyjoeday"
+  .col-md-6
+    p.footer-blurb
+      strong.off_white This site  
+      | is hand built from scratch using Ruby on Rails, Postgres, Heroku, GitHub, SLIM, SASS, Bootstrap, my own photography and 
+      em actual  
+      | caffeine.

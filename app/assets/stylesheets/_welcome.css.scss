@@ -60,12 +60,15 @@ code {
   margin-bottom: 4em;
 }
 
+.relative {
+	position: relative;
+}
+
 .row.no-gutters {
   margin-right: 0;
   margin-left: 0;
 }
 
-.container-fluid,
 .row.no-gutters [class^="col-"],
 .row.no-gutters [class*=" col-"]{
   padding-right: 0;
@@ -158,6 +161,12 @@ nav .glyphicon {
 
 #returnToTop {
   display: none;
+}
+
+.top-link {
+	position: fixed;
+	bottom: 1em;
+	right: 1em;
 }
 
 .content-headline {
