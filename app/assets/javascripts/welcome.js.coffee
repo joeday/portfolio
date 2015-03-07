@@ -8,8 +8,9 @@ $ ->
   return
 
 $(document).ready ->
-  console.log("document is ready bro")
   #Check to see if the window is top if not then display button
+  collapsed = false;
+  
   $(window).scroll ->
     if $(this).scrollTop() > 100
       $("#returnToTop").fadeIn()
@@ -20,9 +21,30 @@ $(document).ready ->
   #Click event to scroll to top
   $("#returnToTop").click (e) ->
     e.preventDefault();
+    console.log("top click!")
     $("html, body").animate 
       scrollTop: 0
       , 300
     false
+  
+  # Toggle Navigation
+  $("#navDrawerToggle").click (e) ->
+    e.preventDefault();
+    if (collapsed)
+      $('.site-header').animate
+        width: "15em"
+      $('body').animate
+        left: "15em"
+      $('.joe-logo').toggle();
+      collapsed = false
+    else
+      $('.site-header').animate
+        width: "5em"
+      $('body').animate
+        left: "5em"
+      $('.joe-logo').toggle();
+        
+      collapsed = true
+    return
 
   return
