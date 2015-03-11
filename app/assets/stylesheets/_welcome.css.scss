@@ -21,8 +21,7 @@ body {
   font-family: $serif;
   font-size: 20px;
   color: $black;
-	left: 15em;
-	position: absolute;
+	padding-top: 2.6em;
 }
 
 p {
@@ -103,52 +102,44 @@ h4 {
   padding-left: 0;
 }
 
-.site-header {
-	background: $black;
-	color: $white;
-	left: 0;
-	z-index: 1000;
-	padding-top: 0;
-	position: fixed;
-	overflow: hidden;
-	width: 15em;
-	height: 100vh;
-	padding: 2em 1.6em;
-}
-
-nav > ul {
-	list-style-type: none;
-	margin: 0;
-	padding: 0;
-}
-
-nav > ul li .main-link {
-	font-size: .9em;
-}
-
-nav > ul li:hover,
-nav > ul li a:hover {
-	text-decoration: none;
-	color: #fff;
-	.glyphicon {
-		color: $grey;
+.navbar-default {
+	background-color: $black;
+	border: 0;
+	
+	.navbar-nav > li > a {
+		color: $orange;
+		&:hover {
+			color: $orange;
+		}
 	}
 }
 
-nav .nav-toggle {
-	position: absolute;
-	top: 2em;
-	right: 0em;
+.joe-logo {
+  font-family: $sans;
+  font-weight: 100;
+  font-size: 1em;
+  color: $white;
+	text-transform: uppercase;
+	margin: .6em 2em .6em 0;
 }
-
-nav .glyphicon {
-	font-size: .7em;
-	padding-right: 1em;
-	color: $dk_grey;
-	&:hover {
-		color: $grey;
-	}
-}
+//nav > ul {
+//	list-style-type: none;
+//	margin: 0;
+//	padding: 0;
+//}
+//
+//nav > ul li .main-link {
+//	font-size: .9em;
+//}
+//
+//nav > ul li:hover,
+//nav > ul li a:hover {
+//	text-decoration: none;
+//	color: #fff;
+//	.glyphicon {
+//		color: $grey;
+//	}
+//}
 
 .contact-info {
 	position: absolute;
@@ -187,13 +178,6 @@ nav .glyphicon {
 
 .off_white {
   color: $off_white;
-}
-
-.joe-logo {
-  font-family: $sans;
-  font-weight: 100;
-  font-size: 1em;
-  color: #fff;
 }
 
 #returnToTop {

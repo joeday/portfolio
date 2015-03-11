@@ -11,7 +11,10 @@ Rails.application.routes.draw do
   get 'web' =>            'welcome#web'
   get 'photography' =>    'welcome#photography'
   get 'home' =>           'welcome#index'
+  get 'contact' =>        'welcome#contact'
+
   get 'resume' =>         'welcome#resume'
+
 
   # Example of regular route:
   #   get 'products/:id' => 'catalog#view'

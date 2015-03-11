@@ -1,25 +1,30 @@
-nav role="navigation"
-  ul data-no-turbolink=""
-    li.nav-toggle
-      = link_to "#", id: "navDrawerToggle" do
-        span.glyphicon.glyphicon-option-vertical aria-hidden="true"
-    li.joe-logo UX Designer &nbsp; > &nbsp; Joe Day
-    li
-      span.glyphicon.glyphicon-home aria-hidden="true"
-      = link_to "Home", home_path, class: ".main-link"
-    li
-      span.glyphicon.glyphicon-th aria-hidden="true"
-      = link_to "Web Design", web_path, class: ".main-link"
-    li
-      span.glyphicon.glyphicon-cd aria-hidden="true"
-      = link_to "Music", "music", class: ".main-link"
-    li
-      span.glyphicon.glyphicon-camera aria-hidden="true"
-      = link_to "Photography", "photography", class: ".main-link"
+nav.navbar.navbar-default.navbar-fixed-top role="navigation"
+  .container-fluid
+    .navbar-header
+      = link_to "#", class: ".navbar-brand" do
+        .joe-logo Joe Day
+  
+    .navbar-collapse.collapse
+      ul.nav.navbar-nav data-no-turbolink=""
+        li
+          = link_to home_path, class: ".main-link" do
+            | Home
+        li
+          = link_to web_path, class: ".main-link" do
+            | Web Design
+        li
+          = link_to music_path, class: ".main-link" do
+            | Music
+        li
+          = link_to photography_path, class: ".main-link" do
+            | Photography
+        li
+          = link_to contact_path, class: ".main-link" do
+            | Contact
 
-  ul.contact-info.list-unstyled
-    li.joe-logoo Joe Day
-    li.social-link = link_to "Resume", resume_path
-    li.social-link = link_to "LinkedIn", "http://www.linkedin.com/in/heyjoeday"
-    li.social-link = link_to "Twitter", "http://www.twitter.com/joeday"
-    li.social-link = link_to "Instagram", "http://www.instagram.com/joeday"
+  / ul.contact-info.list-unstyled
+  /   li.joe-logoo Joe Day
+  /   li.social-link = link_to "Resume", resume_path
+  /   li.social-link = link_to "LinkedIn", "http://www.linkedin.com/in/heyjoeday"
+  /   li.social-link = link_to "Twitter", "http://www.twitter.com/joeday"
+  /   li.social-link = link_to "Instagram", "http://www.instagram.com/joeday"

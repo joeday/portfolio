@@ -26,25 +26,5 @@ $(document).ready ->
       scrollTop: 0
       , 300
     false
-  
-  # Toggle Navigation
-  $("#navDrawerToggle").click (e) ->
-    e.preventDefault();
-    if (collapsed)
-      $('.site-header').animate
-        width: "15em"
-      $('body').animate
-        left: "15em"
-      $('.joe-logo').toggle();
-      collapsed = false
-    else
-      $('.site-header').animate
-        width: "5em"
-      $('body').animate
-        left: "5em"
-      $('.joe-logo').toggle();
-        
-      collapsed = true
-    return
 
   return
