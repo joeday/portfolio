@@ -116,6 +116,16 @@ h4 {
 			color: $orange;
 		}
 	}
+	
+	.navbar-social {
+		margin-right: 1em;
+	}
+	
+	.navbar-social > li > a {
+		margin: 0;
+		padding: .6em .1em;
+	}
+	
 }
 
 .navbar-brand {
@@ -127,6 +137,43 @@ h4 {
 	  color: $white;
 		text-transform: uppercase;
 		margin: .6em 2em .6em 1em;
+	}
+}
+
+.nav-icon {
+	display: inline-block;
+	background-repeat: no-repeat;
+	background-position: top-left;
+	height: 1.3em;
+	width: 1.3em;
+	float: left;
+}
+
+.nav-icon-flickr {
+	background-image: url("webicon-flickr.svg");
+	&:hover {
+		background-image: url("webicon-flickr-hover.svg");
+	}
+}
+
+.nav-icon-instagram {
+	background-image: url("webicon-instagram.svg");
+	&:hover {
+		background-image: url("webicon-instagram-hover.svg");
+	}
+}
+
+.nav-icon-twitter {
+	background-image: url("webicon-twitter.svg");
+	&:hover {
+		background-image: url("webicon-twitter-hover.svg");
+	}
+}
+
+.nav-icon-linkedin {
+	background-image: url("webicon-linkedin.svg");
+	&:hover {
+		background-image: url("webicon-linkedin-hover.svg");
 	}
 }
 

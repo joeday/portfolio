@@ -4,21 +4,31 @@ nav.navbar.navbar-default.navbar-fixed-top role="navigation"
       .navbar-brand
         = link_to "Joe Day", home_path, class: "joe-logo"
   
-    .navbar-collapse.collapse
-      ul.nav.navbar-nav data-no-turbolink=""
-        li
-          = link_to "Web Design", web_path, class: "main-link"
-        // until further notice...
-        / li
-        /   = link_to music_path, class: ".main-link" do
-        /     | Music
-        / li
-        /   = link_to photography_path, class: ".main-link" do
-        /     | Photography
-        li
-          = link_to resume_path, class: "main-link" do
-            | Resume
-
+    ul.nav.navbar-nav data-no-turbolink=""
+      li = link_to "Web Design", web_path, class: "main-link"
+      // until further notice...
+      / li
+      /   = link_to music_path, class: ".main-link" do
+      /     | Music
+      / li
+      /   = link_to photography_path, class: ".main-link" do
+      /     | Photography
+      li = link_to "Resume", resume_path, class: "main-link"
+    
+    ul.nav.navbar-nav.navbar-right.navbar-social
+      li 
+        = link_to "http://www.linkedin.com/in/heyjoeday/en", target: "_blank" do
+          .nav-icon.nav-icon-linkedin
+      li
+        = link_to "http://twitter.com/joeday/", target: "_blank" do
+          .nav-icon.nav-icon-twitter
+      li
+        = link_to "https://instagram.com/joeday/", target: "_blank" do
+          .nav-icon.nav-icon-instagram
+      li
+        = link_to "https://www.flickr.com/photos/joeandjentry/sets/72157648745283703/", target: "_blank" do
+          .nav-icon.nav-icon-flickr
+        
   / ul.contact-info.list-unstyled
   /   li.joe-logoo Joe Day
   /   li.social-link = link_to "Resume", resume_path
